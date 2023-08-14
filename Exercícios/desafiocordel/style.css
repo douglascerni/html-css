@@ -16,42 +16,65 @@
     --fonte-letra: 'Sriracha', cursive;
 }
 
-body {
-    height: 100vh;
-    width: 100vw;
+html, body {
+    min-height: 100vh;
+    background-color: darkgray;
 }
 
 header {
-    height: 200px;
     background-color: black;
     color: white;
+    text-align: center;
 }
 
 header > h1 {
     font-family: var(--fonte-titulo);
     font-variant: small-caps;
-    text-align: center;
-    padding: 10px 0px 10px 0px;
-    font-size: 6em;
+    padding-top: 50px;
 }
 
 header > p {
-    text-align: center;
     font-size: large;
+    padding-bottom: 50px;
 }
 
-header > p > a {
+header a, footer a {
     color: white;
     text-decoration: none;
     font-weight: bold;
 }
 
-a:hover {
+header a:hover, footer a:hover {
     text-decoration: underline;
     
 }
 
-section > p {
-    font-family: var(--fonte-letra);
-    padding-top: 100px;
+section {
+    padding-top: 10vh;
+    padding-bottom: 10vh;
+    line-height: 2em;
+    padding-left: 30px;
+}
+
+section.normal {
+    background-color: white;
+    color: black;
+}
+
+section.imagem {
+    background-color: rgba(0, 0, 0, 0.507);
+    color: white;
+
+}
+
+section.imagem > p {
+    background-color: rgba(0, 0, 0, 0.349);
+    width: 400px;
+}
+
+footer {
+    background-color: black;
+    color: white;
+    text-align: center;
+    padding: 5px;
 }
